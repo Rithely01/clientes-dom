@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Cadastro de Cliente</h1>
+
+        <form id="form-cliente">
+            <input type="text" name="nome" id="nome" placeholder="Nome">
+            <input type="text"
+            name="sobrenome"
+            id="sobrenome"
+            placeholder="sobrenome">
+
+            <input type="text" name="cpf" id="cpf" placeholder="CPF">
+            <input type="text" name="email" id="email" placeholder="E-mail">
+
+            <button type="submit">Adicionar Cliente</button>
+
+
+        </form>
+         <div class="lista-clientes">
+          <h2>Cliente Cadastro</h2>
+          <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>sobrenome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-cliente">
+                <tr>
+                    <td>Samuel</td>                     
+                    <td> dos Santos</td>
+                    <td>9999999999</td>
+                    <td>Samueldossantos0728@gmail.com</td>
+                    <td class="acoes">
+                        <button class="editar">Editar</button>
+                        <button class="excluir">Excluir</button>
+                    </td>
+                </tr>
+                        <tr>
+                    <th>Nome</th>
+                    <th>sobrenome</th>
+                    <th>CPF</th>
+                    <th>E-mail</th>
+                    <th>Ações</th>
+                </tr>
+                
+            </thead>
+
+           
+                </div>
+       <tbody id="tabela-cliente">
+                <tr>
+                    <td>Myrela</td>                     
+                    <td> Feirra</td>
+                    <td>9999999999</td>
+                    <td>Samueldossantos0728@gmail.com</td>
+                    <td class="acoes">
+                        <button class="editar">Editar</button>
+                        <button class="excluir">Excluir</button>
+                    </td>
+                </tr>
+            
+                <div class="modal" id="modal-editar">
+                    <div class="modal-content">
+                        <h2>Editar Cliente</h2>
+                        <form action="form-edicao">
+                            <input type="nome" id="idit-nome">
+                            <input type="sobrenome" id="idit-sobrenome">
+                            <input type="cpf" id="idit-cpf">
+                            <input type="email" id="idit-email">
+                            <button type="button">Salva Alteraçães</button>
+                            <button type="button">Cancelar</button>
+
+                        </form>
+                        <div class="modal" id="modal-">
+                            <div class="modal-content">
+                                <h3>Deseja realmente excluir este cliente?</h3>
+                                <button id="confirmar-exclusao">Sim</button>
+                                <button id="cancelar-exclusao">Não</button>
+                            </div>
+                        </div>
+            </tbody>
+          </table>
+    </div>
+    
+</body>
+</html>
